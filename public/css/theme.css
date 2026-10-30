@@ -1,0 +1,97 @@
+/*
+ * Design tokens. Light is the default. Dark values are applied when
+ * <html data-theme="dark"> is set by /js/theme-init.js before first paint.
+ * Every colour used by the interface comes from these variables.
+ */
+:root {
+  color-scheme: light;
+
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-2: #eef1f4;
+  --border: #d6dce3;
+  --border-strong: #7d8a99;
+  --text: #14202b;
+  --text-muted: #46566a;
+
+  --brand: #0f766e;
+  --brand-strong: #0b5f58;
+  --on-brand: #ffffff;
+  --focus: #0b5cad;
+
+  --available-bg: #dcfce7;
+  --available-fg: #14532d;
+  --available-border: #15803d;
+  --unavailable-bg: #fee2e2;
+  --unavailable-fg: #7f1d1d;
+  --unavailable-border: #b91c1c;
+  --unknown-bg: #e4e8ed;
+  --unknown-fg: #2c3948;
+  --unknown-border: #52606f;
+
+  /* Map markers keep the same strong colours in both themes (white symbol on top) */
+  --marker-available: #15803d;
+  --marker-unavailable: #b91c1c;
+  --marker-unknown: #52606f;
+  --marker-cluster: #0f4c81;
+
+  --danger: #b91c1c;
+  --danger-text: #9b1c1c;
+
+  --toast-bg: #14202b;
+  --toast-text: #ffffff;
+  --toast-success: #4ade80;
+  --toast-error: #f87171;
+
+  --backdrop: rgba(15, 23, 42, 0.55);
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.08), 0 4px 12px rgba(15, 23, 42, 0.06);
+  --attribution-bg: rgba(255, 255, 255, 0.85);
+  --tile-filter: none;
+
+  --radius: 6px;
+  --radius-lg: 10px;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Telugu",
+    "Noto Sans Devanagari", "Nirmala UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #0d131a;
+  --surface: #151d27;
+  --surface-2: #1e2935;
+  --border: #2c3a4a;
+  --border-strong: #8190a2;
+  --text: #e9eef3;
+  --text-muted: #aab7c4;
+
+  --brand: #2dd4bf;
+  --brand-strong: #5eead4;
+  --on-brand: #04282a;
+  --focus: #7cc4ff;
+
+  --available-bg: #123a26;
+  --available-fg: #c3f6d6;
+  --available-border: #4ade80;
+  --unavailable-bg: #4b181c;
+  --unavailable-fg: #ffd0d0;
+  --unavailable-border: #f87171;
+  --unknown-bg: #27323f;
+  --unknown-fg: #dbe3ec;
+  --unknown-border: #94a3b5;
+
+  --danger: #f87171;
+  --danger-text: #ffb4b4;
+
+  --toast-bg: #e9eef3;
+  --toast-text: #0d131a;
+  --toast-success: #15803d;
+  --toast-error: #b91c1c;
+
+  --backdrop: rgba(0, 0, 0, 0.65);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.35);
+  --attribution-bg: rgba(21, 29, 39, 0.88);
+  /* Keeps the original tiles but turns them dark, so the map matches the page */
+  --tile-filter: invert(1) hue-rotate(180deg) brightness(0.92) contrast(0.92);
+}

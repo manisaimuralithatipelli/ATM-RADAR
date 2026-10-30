@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATM RADAR</title>
+  <meta name="description" content="">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff">
+  <script src="/js/theme-init.js"></script>
+  <link rel="icon" type="image/png" href="/images/favicon-48.png">
+  <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/map.css">
+  <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <script src="/vendor/leaflet/leaflet.js" defer></script>
+  <script type="module" src="/js/pages/home.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skipToContent"></a>
+  <div id="site-header"></div>
+
+  <main id="main" class="page" tabindex="-1">
+    <noscript><p class="note">ATM RADAR needs JavaScript to run.</p></noscript>
+
+    <section class="panel search-panel" aria-labelledby="search-title">
+      <h1 id="search-title" class="page-title" data-i18n="search.title"></h1>
+
+      <form id="search-form" novalidate>
+        <div class="search-grid">
+          <div class="field field--wide">
+            <label for="q" data-i18n="search.queryLabel"></label>
+            <input id="q" name="q" type="search" class="input" maxlength="80" autocomplete="off"
+                   data-i18n-placeholder="search.queryPlaceholder">
+          </div>
+
+          <div class="field">
+            <label for="pincode" data-i18n="search.pincodeLabel"></label>
+            <input id="pincode" name="pincode" type="text" class="input" inputmode="numeric"
+                   maxlength="6" autocomplete="postal-code" aria-describedby="pincode-error"
+                   data-i18n-placeholder="search.pincodePlaceholder">
+            <p id="pincode-error" class="field-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="bank" data-i18n="search.bankLabel"></label>
+            <select id="bank" name="bank" class="input"></select>
+          </div>
+
+          <div class="field">
+            <label for="status" data-i18n="search.statusLabel"></label>
+            <select id="status" name="status" class="input"></select>
+          </div>
+        </div>
+
+        <div class="search-actions">
+          <button type="submit" class="btn btn--primary">
+            <span data-i18n="search.submit"></span>
+          </button>
+          <button type="button" id="reset-btn" class="btn btn--secondary" data-i18n="search.reset"></button>
+          <button type="button" id="near-me-btn" class="btn btn--secondary" aria-pressed="false"></button>
+          <div id="radius-row" class="field field--inline" hidden>
+            <label for="radius" data-i18n="search.radiusLabel"></label>
+            <select id="radius" class="input"></select>
+          </div>
+        </div>
+
+        <p class="help" data-i18n="search.locationNote"></p>
+        <p id="location-message" class="help" aria-live="polite"></p>
+      </form>
+
+      <p class="disclaimer" data-i18n="disclaimer.short"></p>
+    </section>
+
+    <div class="finder">
+      <section id="results-pane" class="results-pane" aria-labelledby="results-heading">
+        <div class="results-head">
+          <h2 id="results-heading" class="section-title" data-i18n="results.heading"></h2>
+          <p id="results-count" class="results-count" aria-live="polite"></p>
+        </div>
+        <div id="results-body"></div>
+      </section>
+
+      <section class="map-pane">
+        <div id="map" role="region" data-i18n-aria-label="map.label"></div>
+        <p id="map-fallback" class="state-box" hidden></p>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

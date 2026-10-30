@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "title": "ATM RADAR | Smart ATM Cash Availability Finder",
+    "description": "Find ATMs and check recent cash availability reports before you travel."
+  },
+  "brand": {
+    "name": "ATM RADAR",
+    "tagline": "Find ATMs. Check Cash. Go Smarter.",
+    "product": "Smart ATM Cash Availability Finder"
+  },
+  "nav": {
+    "skipToContent": "Skip to main content",
+    "main": "Main navigation",
+    "home": "Home",
+    "login": "Log in",
+    "signup": "Sign up",
+    "logout": "Log out",
+    "language": "Language",
+    "darkMode": "Dark mode",
+    "whyThis": "Why This?"
+  },
+  "disclaimer": {
+    "short": "ATM records and statuses are simulated and are not live bank data. Community reports are unverified."
+  },
+  "search": {
+    "title": "Find an ATM",
+    "queryLabel": "Area, bank, or ATM name",
+    "queryPlaceholder": "For example: Hanamkonda",
+    "pincodeLabel": "PIN code",
+    "pincodePlaceholder": "6 digits",
+    "bankLabel": "Bank",
+    "anyBank": "All banks",
+    "statusLabel": "Status",
+    "anyStatus": "Any status",
+    "submit": "Search",
+    "reset": "Clear filters",
+    "nearMe": "Find ATMs near me",
+    "nearMeStop": "Show all ATMs",
+    "locating": "Finding your location",
+    "radiusLabel": "Within",
+    "locationNote": "Your location is used only for this search. It is not stored.",
+    "locationActive": "Showing ATMs near your current location."
+  },
+  "results": {
+    "heading": "ATMs",
+    "loading": "Loading ATMs",
+    "count_one": "{count} ATM found",
+    "count_other": "{count} ATMs found",
+    "empty": "No ATMs match your search.",
+    "emptyHint": "Try a different area or PIN code, or clear the filters.",
+    "emptyNearby": "No ATMs found within this distance.",
+    "emptyNearbyHint": "Try a larger distance or clear the filters.",
+    "error": "ATMs could not be loaded.",
+    "retry": "Try again",
+    "distanceAway": "{distance} away",
+    "noRecentReport": "No report in the last {minutes} minutes",
+    "reportedAgo": "{source}, {time}"
+  },
+  "status": {
+    "AVAILABLE": "Available",
+    "UNAVAILABLE": "Unavailable",
+    "UNKNOWN": "Unknown"
+  },
+  "source": {
+    "simulated": "Simulated data",
+    "community": "Community report"
+  },
+  "reliability": {
+    "label": "Reliability",
+    "HIGH": "High",
+    "MEDIUM": "Medium",
+    "LOW": "Low",
+    "SIMULATED": "Simulated",
+    "NONE": "Not available"
+  },
+  "detail": {
+    "back": "Back to results",
+    "bank": "Bank",
+    "address": "Address",
+    "pincode": "PIN code",
+    "status": "Reported status",
+    "source": "Source",
+    "reportedAt": "Reported",
+    "validUntil": "Valid until",
+    "validity": "Report validity",
+    "validNow": "Still valid",
+    "expired": "Expired. The status is shown as unknown.",
+    "lastReport": "Last report",
+    "noReports": "No reports have been recorded for this ATM yet.",
+    "matching_one": "{count} matching community report",
+    "matching_other": "{count} matching community reports",
+    "conflicting_one": "{count} conflicting community report",
+    "conflicting_other": "{count} conflicting community reports",
+    "simulatedNote": "This is a sample ATM. Its status is simulated and is not live bank data.",
+    "directions": "Open directions",
+    "directionsNewTab": "Opens in a new tab",
+    "recent": "Recent reports",
+    "recentLoadError": "Recent reports could not be loaded.",
+    "communityReports": "Community reports"
+  },
+  "report": {
+    "title": "Report what you saw",
+    "help": "Report only after you have checked this ATM yourself. Reports are unverified observations.",
+    "available": "Cash available",
+    "unavailable": "No cash",
+    "loginHint": "You need to log in to submit a report.",
+    "success": "Thank you. Your report was added.",
+    "cooldown_one": "You already reported this ATM recently. Try again in {count} minute.",
+    "cooldown_other": "You already reported this ATM recently. Try again in {count} minutes."
+  },
+  "auth": {
+    "loginTitle": "Log in",
+    "signupTitle": "Create an account",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "passwordHint": "At least 8 characters, with a letter and a number.",
+    "submitLogin": "Log in",
+    "submitSignup": "Sign up",
+    "switchToSignup": "Need an account? Sign up",
+    "switchToLogin": "Already have an account? Log in",
+    "close": "Close",
+    "working": "Please wait",
+    "welcome": "Welcome, {name}.",
+    "loggedOut": "You have been logged out."
+  },
+  "map": {
+    "label": "Map of ATMs",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "loadError": "The map could not be loaded. The list of ATMs still works.",
+    "cluster_one": "{count} ATM here. Press to zoom in.",
+    "cluster_other": "{count} ATMs here. Press to zoom in."
+  },
+  "errors": {
+    "VALIDATION_ERROR": "Please check the highlighted fields.",
+    "NAME_REQUIRED": "Enter your name.",
+    "NAME_TOO_SHORT": "Name must have at least 2 characters.",
+    "NAME_TOO_LONG": "Name must have at most 60 characters.",
+    "EMAIL_REQUIRED": "Enter your email address.",
+    "EMAIL_TOO_LONG": "Email address is too long.",
+    "INVALID_EMAIL": "Enter a valid email address.",
+    "PASSWORD_REQUIRED": "Enter your password.",
+    "PASSWORD_TOO_SHORT": "Password must have at least 8 characters.",
+    "PASSWORD_TOO_LONG": "Password is too long.",
+    "PASSWORD_NEEDS_LETTER": "Password must include a letter.",
+    "PASSWORD_NEEDS_NUMBER": "Password must include a number.",
+    "INVALID_PASSWORD": "Password is not valid.",
+    "EMAIL_TAKEN": "An account with this email already exists.",
+    "INVALID_CREDENTIALS": "Email or password is incorrect.",
+    "AUTH_REQUIRED": "Please log in to continue.",
+    "RATE_LIMITED": "Too many requests. Please wait a while and try again.",
+    "NETWORK_ERROR": "Could not reach the server. Check your connection and try again.",
+    "INTERNAL_ERROR": "Something went wrong. Please try again.",
+    "NOT_FOUND": "This could not be found.",
+    "ATM_NOT_FOUND": "This ATM could not be found.",
+    "INVALID_STATUS": "Choose a valid status.",
+    "INVALID_PINCODE": "Enter a 6 digit PIN code.",
+    "INVALID_QUERY": "The search text is not valid.",
+    "INVALID_BANK": "The bank filter is not valid.",
+    "INVALID_COORDINATES": "The location is not valid.",
+    "INVALID_RADIUS": "The distance is not valid.",
+    "INVALID_LIMIT": "The result limit is not valid.",
+    "LOCATION_INCOMPLETE": "The location is incomplete.",
+    "INVALID_VALUE": "This value is not valid.",
+    "INVALID_ID": "This ATM link is not valid.",
+    "INVALID_JSON": "The request could not be read.",
+    "PAYLOAD_TOO_LARGE": "The request is too large.",
+    "UNSUPPORTED_MEDIA_TYPE": "The request format is not supported.",
+    "REPORT_COOLDOWN": "You already reported this ATM recently.",
+    "GEO_DENIED": "Location access was blocked. Allow location in your browser settings, or search by area or PIN code.",
+    "GEO_UNAVAILABLE": "Your location could not be determined. Search by area or PIN code instead.",
+    "GEO_TIMEOUT": "Finding your location took too long. Try again, or search by area or PIN code.",
+    "GEO_UNSUPPORTED": "This browser does not support location. Search by area or PIN code instead.",
+    "GEO_INSECURE": "Location works only on secure pages (HTTPS). Search by area or PIN code instead."
+  },
+  "common": {
+    "backToFinder": "Back to the ATM finder",
+    "lastUpdated": "Last updated: {date}"
+  },
+  "footer": {
+    "navLabel": "Footer navigation",
+    "description": "Find ATMs near you and check recent cash availability reports before you travel.",
+    "linksHeading": "Pages",
+    "privacy": "Privacy / Disclaimer",
+    "terms": "Terms and Conditions",
+    "developerHeading": "Developer credit",
+    "developer": "Developer",
+    "course": "Course",
+    "courseValue": "Diploma in Computer Science and Engineering",
+    "disclaimer": "ATM statuses are not guaranteed. Simulated data does not represent live bank information. Community reports are unverified observations.",
+    "copyright": "© {year} {name}. All rights reserved.",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "whyThis": {
+    "metaTitle": "Why This? | ATM RADAR",
+    "metaDescription": "Why ATM RADAR exists, how it works, and what its limits are.",
+    "title": "Why This?",
+    "intro": "ATM RADAR helps people check whether an ATM is likely to have cash before they travel to it.",
+    "problem": {
+      "title": "The Problem",
+      "body": "People often travel to ATMs without knowing whether cash is available. They may waste time waiting in queues or travelling to an ATM that has no cash."
+    },
+    "solution": {
+      "title": "Our Solution",
+      "body": "ATM RADAR helps you discover nearby ATMs on a map and review recent availability information before you visit. Each ATM shows its reported status, where the report came from, when it was made, and how reliable it is."
+    },
+    "how": {
+      "title": "How It Works",
+      "step1": "Find an ATM using the map, area search, or PIN code.",
+      "step2": "Review its reported availability, source, and timestamp.",
+      "step3": "Check the reliability label and whether the report is still valid.",
+      "step4": "Submit a community observation after personally checking an ATM.",
+      "step5": "Open directions to the selected ATM."
+    },
+    "transparency": {
+      "title": "Data Transparency",
+      "body1": "ATM RADAR currently uses sample ATM records and simulated statuses. These are not live bank data.",
+      "body2": "Community reports are unverified observations and do not guarantee current cash availability."
+    },
+    "security": {
+      "title": "Security and Privacy",
+      "intro": "ATM RADAR does not:",
+      "item1": "process withdrawals or transfers",
+      "item2": "connect to private bank systems",
+      "item3": "collect card PINs or account details",
+      "item4": "maintain precise user location history",
+      "more": "Read the full Privacy / Disclaimer page"
+    },
+    "purpose": {
+      "title": "Project Purpose",
+      "body": "This project has an educational purpose. It demonstrates full-stack development, REST APIs, MongoDB, interactive maps, multilingual interfaces, and responsible handling of location-related information."
+    },
+    "limits": {
+      "title": "Limitations and Future Scope",
+      "item1": "Live bank integration is not available.",
+      "item2": "Reports may be outdated.",
+      "item3": "ATM location coverage depends on the sample dataset.",
+      "item4": "Any future bank integration would require authorized APIs and appropriate security review."
+    }
+  },
+  "privacy": {
+    "metaTitle": "Privacy / Disclaimer | ATM RADAR",
+    "metaDescription": "What information ATM RADAR uses and what it does not promise.",
+    "title": "Privacy / Disclaimer",
+    "intro": "This page explains in plain language what information ATM RADAR uses and what it does not promise.",
+    "disclaimer": {
+      "title": "Disclaimer",
+      "body": "ATM RADAR currently shows sample ATM records and simulated statuses. They are not live bank data. Community reports are unverified observations. An Available status does not guarantee that cash is present, and an Unavailable or Unknown status does not guarantee that it is absent. Do not rely on this site for urgent or important decisions. This site is not affiliated with any bank."
+    },
+    "collect": {
+      "title": "What we collect",
+      "item1": "Account details: your name, your email address, and a password that is stored only as a salted hash. The password itself is never stored and cannot be seen by us.",
+      "item2": "Reports you submit: the ATM, the status you chose, and the time. A report is linked to your account to limit spam, and it is not shown to other people with your name.",
+      "item3": "A login cookie that keeps you logged in for about a week. It is used only for login."
+    },
+    "location": {
+      "title": "Your location",
+      "body": "If you press Find ATMs near me, your browser asks for permission and shares your approximate position. The position is sent to the server once as part of the search so that nearby ATMs can be found. ATM RADAR does not save it and keeps no location history. Your hosting provider may keep ordinary server logs of requests. You can use area and PIN code search without sharing your location."
+    },
+    "browser": {
+      "title": "Saved in your browser",
+      "body": "Your language and light or dark mode choices are saved in your browser (localStorage). They are not sent to the server."
+    },
+    "thirdParty": {
+      "title": "Other services",
+      "body": "Map tiles come from OpenStreetMap, which receives your IP address and the map area you view. If you open directions, Google Maps opens in a new tab and its own privacy policy applies. ATM RADAR has no advertising and no analytics."
+    },
+    "retention": {
+      "title": "How long data is kept",
+      "body": "Reports are deleted automatically after 7 days. Account details are kept until the account is deleted."
+    },
+    "not": {
+      "title": "What we do not collect",
+      "body": "Card numbers, card PINs, bank account details, or precise location history."
+    },
+    "choices": {
+      "title": "Your choices",
+      "body": "You can log out at any time, block location access in your browser, and clear saved preferences in your browser settings. To ask for your account to be deleted, email the developer at the address in the footer. There is no self-service deletion page yet."
+    }
+  },
+  "terms": {
+    "metaTitle": "Terms and Conditions | ATM RADAR",
+    "metaDescription": "The terms for using ATM RADAR.",
+    "title": "Terms and Conditions",
+    "intro": "By using ATM RADAR you agree to these terms. ATM RADAR is an information service. It is not a bank and it does not handle money.",
+    "use": {
+      "title": "Using the service",
+      "body": "You may use ATM RADAR to look up ATMs and to submit honest reports based on your own observation. You must not submit false reports, send spam, try to break or overload the service, or use it for anything unlawful."
+    },
+    "accounts": {
+      "title": "Accounts",
+      "body": "You are responsible for keeping your password private and for activity under your account. Give accurate details. Accounts that misuse the service may be limited or removed."
+    },
+    "content": {
+      "title": "Reports you submit",
+      "body": "Reports must reflect what you saw yourself. By submitting a report you allow ATM RADAR to show its status, time, and source to other users. Reports are unverified and may be removed."
+    },
+    "accuracy": {
+      "title": "No guarantee of accuracy",
+      "body": "Statuses, locations, and times may be simulated, outdated, or wrong. Do not rely on ATM RADAR for urgent needs. You use the information at your own risk."
+    },
+    "affiliation": {
+      "title": "No bank affiliation",
+      "body": "ATM RADAR is not connected to, endorsed by, or acting for any bank. Bank names appear only to describe sample ATM records."
+    },
+    "changes": {
+      "title": "Availability and changes",
+      "body": "The service may be changed, paused, or removed at any time without notice. These terms may be updated, and the date at the top shows the latest version."
+    },
+    "liability": {
+      "title": "Limits of liability",
+      "body": "To the extent allowed by law, the developer is not responsible for losses that come from using or not being able to use this service."
+    },
+    "questions": {
+      "title": "Questions",
+      "body": "For questions about these terms, email the developer at the address in the footer."
+    }
+  },
+  "notFound": {
+    "metaTitle": "Page not found | ATM RADAR",
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has moved."
+  }
+}
